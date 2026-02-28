@@ -5,7 +5,7 @@ import ThemeRegistry from './ThemeRegistry'
 export const metadata: Metadata = {
   title: "LinkedIn",
    icons: {
-    icon: "/favicon.webp",
+    icon: "/favicon.png",
   },
   description: "MUI LinkedIn Style Feed",
 }
