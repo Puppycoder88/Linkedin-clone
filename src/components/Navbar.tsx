@@ -27,7 +27,7 @@ export default function Navbar() {
           {/* LEFT SECTION */}
           <Box display="flex" alignItems="center" gap={2}>
             <Image
-              src="/linkedin.webp"
+              src="/linkedin.png"
               alt="LinkedIn Logo"
               width={60}
               height={60}
