@@ -1,10 +1,9 @@
-'use client'
-
 import { Container, Grid } from '@mui/material'
 import Navbar from '../components/Navbar'
 import LeftSidebar from '../components/LeftSidebar'
 import Feed from '../components/Feed'
 import RightSidebar from '../components/RightSidebar'
+// import Grid from '@mui/material/Grid2'
 
 export default function HomePage() {
   return (
@@ -15,18 +14,18 @@ export default function HomePage() {
         <Grid container spacing={2}>
           
           {/* Left Sidebar */}
-          <Grid item xs={12} md={3}>
+          <Grid  xs={12} md={3}>
             <LeftSidebar />
           </Grid>
 
           {/* Feed */}
-          <Grid item xs={12} md={6}>
+          <Grid  xs={12} md={6}>
             <Feed />
           </Grid>
 
           {/* Right Sidebar */}
           <Grid
-            item
+            
             xs={12}
             md={3}
             sx={{ display: { xs: 'none', md: 'block' } }}
