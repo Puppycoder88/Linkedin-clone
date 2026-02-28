@@ -1,4 +1,4 @@
-import { Container, Grid } from '@mui/material'
+import Grid from "@mui/material/Grid";
 import Navbar from '../components/Navbar'
 import LeftSidebar from '../components/LeftSidebar'
 import Feed from '../components/Feed'
@@ -10,31 +10,22 @@ export default function HomePage() {
     <>
       <Navbar />
 
-      <Container maxWidth="lg" sx={{ mt: 2 }}>
-        <Grid container spacing={2}>
-          
-          {/* Left Sidebar */}
-          <Grid  xs={12} md={3}>
-            <LeftSidebar />
-          </Grid>
+       <Grid container spacing={2}>
+      <Grid size={{ xs: 12, md: 3 }}>
+        <LeftSidebar />
+      </Grid>
 
-          {/* Feed */}
-          <Grid  xs={12} md={6}>
-            <Feed />
-          </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Feed />
+      </Grid>
 
-          {/* Right Sidebar */}
-          <Grid
-            
-            xs={12}
-            md={3}
-            sx={{ display: { xs: 'none', md: 'block' } }}
-          >
-            <RightSidebar />
-          </Grid>
-
-        </Grid>
-      </Container>
+      <Grid
+        size={{ xs: 12, md: 3 }}
+        sx={{ display: { xs: "none", md: "block" } }}
+      >
+        <RightSidebar />
+      </Grid>
+    </Grid>
     </>
   )
 }
