@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { ReactNode } from 'react'
-import { ThemeProvider } from '@mui/material/styles'
-import CssBaseline from '@mui/material/CssBaseline'
-import theme from './theme'
+import ThemeRegistry from './ThemeRegistry'
 
 export const metadata: Metadata = {
   title: "LinkedIn",
    icons: {
     icon: "/favicon.webp",
   },
+  description: "MUI LinkedIn Style Feed",
 }
 
 export default function RootLayout({
@@ -17,12 +16,11 @@ export default function RootLayout({
   children: ReactNode
 }) {
   return (
-    <html lang="en">
+      <html lang="en">
       <body>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
+        <ThemeRegistry>
           {children}
-        </ThemeProvider>
+        </ThemeRegistry>
       </body>
     </html>
   )
